@@ -1,0 +1,189 @@
+/* ================================
+   PALETA DE COLORES
+   ================================ */
+:root {
+    --cafe-oscuro: #4E342E;
+    --crema: #F5E8C7;
+    --dorado: #C9A66B;
+    --fondo-claro: #FFFDF8;
+    --texto: #2B2B2B;
+}
+
+/* ================================
+   ESTILOS GENERALES
+   ================================ */
+body {
+    background-color: var(--fondo-claro);
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--cafe-oscuro);
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+header {
+    background-color: var(--cafe-oscuro) !important;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+/* ================================
+   NAVEGACIÓN
+   ================================ */
+.navbar {
+    background-color: var(--dorado) !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Estados de enlaces (requerido por el proyecto) */
+.nav-link:link {
+    color: white;
+}
+
+.nav-link:visited {
+    color: #f0e6d2;
+}
+
+.nav-link:hover {
+    color: var(--crema);
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    color: var(--cafe-oscuro);
+}
+
+/* ================================
+   BANNER
+   ================================ */
+.banner {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   TARJETAS DE PRODUCTOS
+   ================================ */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--cafe-oscuro);
+    font-weight: bold;
+}
+
+/* ================================
+   GALERÍA DE FOTOS
+   ================================ */
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ================================
+   FORMULARIO DE CONTACTO
+   ================================ */
+form input,
+form textarea {
+    border: 2px solid var(--cafe-oscuro);
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--dorado);
+    box-shadow: 0 0 5px var(--dorado);
+}
+
+button[type="submit"] {
+    background-color: var(--cafe-oscuro);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background .3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--dorado);
+    color: black;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+    background-color: var(--cafe-oscuro) !important;
+    color: white;
+}
+
+footer a {
+    color: var(--dorado);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: var(--crema);
+    text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVIDAD
+   ================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
