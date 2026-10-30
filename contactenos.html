@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Miguel — #Estudiante">
-    <meta name="description" content="Conócenos — El Cafetín Gourmet">
-    <meta name="keywords" content="cafetería, historia, misión, visión, valores, Aguadilla">
+    <meta name="description" content="Página de contacto — El Cafetín Gourmet">
+    <meta name="keywords" content="contacto, cafetería, café, Aguadilla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Conócenos — El Cafetín Gourmet</title>
+    <title>Contáctenos — El Cafetín Gourmet</title>
 
-    <!-- Bootstrap -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS externo -->
+   
     <link rel="stylesheet" href="include/estilos.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="bg-dark text-white p-3">
     <div class="container d-flex align-items-center">
         <img src="img/logo.png" alt="Logo" height="60">
@@ -26,7 +25,7 @@
     </div>
 </header>
 
-<!-- NAV -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand" href="index.html">Inicio</a>
@@ -37,11 +36,10 @@
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="conocenos.html">Conócenos</a></li>
-                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="conocenos.html">Conócenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Menu</a></li>
                 <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contactenos.html">Contáctenos</a></li>
             </ul>
         </div>
     </div>
@@ -50,55 +48,50 @@
 
 <main class="container my-5">
 
-    <h1 class="text-center mb-4">Conócenos</h1>
+    <h1 class="text-center mb-4">Contáctenos</h1>
 
-    
-    <div class="text-center mb-5">
-        <img src="img/local.png" class="img-fluid rounded shadow" alt="Nuestro local">
+    <p class="text-center fs-5 mb-5">
+        Si deseas comunicarte con nosotros, completar un pedido o solicitar información, utiliza el siguiente formulario.
+    </p>
+
+    <div class="row">
+
+        
+        <div class="col-md-6 mb-4">
+            <h3>Escríbanos:</h3>
+
+            <form onsubmit="return validarEmail()">
+
+                <label for="nombre" class="fw-bold mt-3">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escriba su nombre">
+
+                <label for="email" class="fw-bold mt-3">Email: <span class="text-danger">*</span></label>
+                <input type="email" id="email" placeholder="correo@example.com">
+
+                <label for="asunto" class="fw-bold mt-3">Asunto:</label>
+                <input type="text" id="asunto" placeholder="Motivo del mensaje">
+
+                <label for="comentarios" class="fw-bold mt-3">Comentarios:</label>
+                <textarea id="comentarios" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+
+                <button type="submit" class="mt-3">Enviar</button>
+            </form>
+        </div>
+
+        
+        <div class="col-md-6 mb-4">
+            <h3>Encuéntranos:</h3>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.497534813674!2d-67.148674!3d18.457468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c02b0d8f3c2e0d1%3A0x7a4a2b3f7e3f8b9!2sInter%20Aguadilla!5e0!3m2!1ses!2spr!4v1700000000000"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
     </div>
 
-   
-    <section class="mb-5">
-        <h2>Nuestra Historia</h2>
-        <p class="fs-5 mt-3">
-            El Cafetín Gourmet nació con la pasión de crear un espacio donde el buen café, 
-            la repostería artesanal y un ambiente acogedor se unieran para ofrecer una experiencia única.  
-            Desde nuestros inicios, hemos trabajado con productores locales para garantizar 
-            la frescura y calidad de cada taza que servimos.
-        </p>
-    </section>
-
-    
-    <section class="mb-5">
-        <h2>Misión</h2>
-        <p class="fs-5 mt-3">
-            Brindar a nuestros clientes una experiencia excepcional a través de productos de alta calidad, 
-            un servicio cálido y un ambiente que invite a compartir, relajarse y disfrutar.
-        </p>
-    </section>
-
-    
-    <section class="mb-5">
-        <h2>Visión</h2>
-        <p class="fs-5 mt-3">
-            Convertirnos en la cafetería preferida de la comunidad, reconocida por nuestro compromiso 
-            con el sabor, la innovación y el apoyo a los productores locales.
-        </p>
-    </section>
-
-   
-    <section class="mb-5">
-        <h2>Valores</h2>
-        <ul class="fs-5 mt-3">
-            <li><strong>Calidad:</strong> Seleccionamos ingredientes frescos y de primera.</li>
-            <li><strong>Servicio:</strong> Atendemos con amabilidad, respeto y dedicación.</li>
-            <li><strong>Comunidad:</strong> Apoyamos a negocios y productores locales.</li>
-            <li><strong>Pasión:</strong> Amamos lo que hacemos y lo reflejamos en cada detalle.</li>
-            <li><strong>Innovación:</strong> Siempre buscamos nuevas formas de sorprenderte.</li>
-        </ul>
-    </section>
-
 </main>
+
 
 <footer class="bg-dark text-white text-center p-4">
     <p>© 2024 El Cafetín Gourmet — Todos los derechos reservados.</p>
@@ -114,6 +107,17 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+function validarEmail() {
+    let email = document.getElementById("email").value;
+
+    if (email.trim() === "") {
+        alert("Debe escribir su Email.");
+        return false;
+    }
+    return true;
+}
+</script>
+
 </body>
 </html>
-
