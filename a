@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudVault</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding-top:100px;
+        }
+
+        h1{
+            font-size:60px;
+            color:#38bdf8;
+        }
+
+        .card{
+            width:600px;
+            margin:auto;
+            padding:30px;
+            background:#1e293b;
+            border-radius:15px;
+        }
+
+        ul{
+            text-align:left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+<h1>CloudVault</h1>
+
+<h3>Personal Cloud Engineering Portfolio Project</h3>
+
+<p>
+Built by Miguel using Ubuntu, Docker, Python and Flask
+</p>
+
+<h3>Technologies</h3>
+
+<ul>
+<li>Ubuntu Server</li>
+<li>Docker</li>
+<li>Python Flask</li>
+<li>GitHub</li>
+<li>Nginx</li>
+</ul>
+
+</div>
+
+</body>
+</html>
